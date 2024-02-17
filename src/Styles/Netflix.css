@@ -1,0 +1,682 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.background-img {
+  background-image: linear-gradient(
+      50deg,
+      rgba(0, 0, 0, 0.9) 20%,
+      rgba(0, 0, 0, 0.8965) 26.5%,
+      rgba(0, 0, 0, 0.8861) 33%,
+      rgba(0, 0, 0, 0.8688) 39.5%,
+      rgba(0, 0, 0, 0.8444) 46%,
+      rgba(0, 0, 0, 0.8132) 52.5%,
+      rgba(0, 0, 0, 0.775) 59%,
+      rgba(0, 0, 0, 0.7368) 65.5%,
+      rgba(0, 0, 0, 0.7056) 72%,
+      rgba(0, 0, 0, 0.6813) 78.5%,
+      rgba(0, 0, 0, 0.6639) 85%,
+      rgba(0, 0, 0, 0.6535) 91.5%,
+      rgba(0, 0, 0, 0.65) 98%
+    ),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/c906271d-7184-4eec-83c9-b6d4c1a068ec/728874a6-eeda-400a-9bcf-a935a1408a4f/IN-en-20231127-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+
+  height: 625px;
+  position: relative;
+  object-fit: contain;
+}
+
+@media (min-width: 1280px) {
+  .background-img {
+    height: 700px;
+  }
+}
+
+.navbar-expand {
+  padding: 21px 24px;
+  min-height: 24px;
+}
+
+@media only screen and (min-width: 1279px) {
+  .navbar-expand {
+    padding: 24px 48px;
+  }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 1278px) {
+  .navbar-expand {
+    padding: 20px 32px;
+  }
+}
+
+.logo svg {
+  width: 89px;
+  height: 24px;
+  fill: rgb(229, 9, 20);
+}
+
+@media only screen and (min-width: 960px) {
+  .logo svg {
+    width: 148px;
+    height: 40px;
+  }
+}
+
+.sign-in a {
+  font-size: 0.875rem;
+  padding: 0.4rem 1rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+}
+
+.nav-items .language-tab select,
+.footer-items .language-tab select {
+  border-color: rgba(128, 128, 128, 1);
+  padding: 0.4rem 0.6rem 0.4rem 2.2rem;
+  background-color: transparent;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .nav-items .language-tab select {
+    width: 1rem;
+  }
+}
+
+option {
+  color: black;
+  background: grey;
+}
+
+.language-tab {
+  position: relative;
+}
+
+.language-tab svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/*min-height: 34rem;
+  max-width: 38%;
+  position:absolute;
+  left: 9rem; */
+
+.hero {
+  max-width: 100%;
+  width: auto;
+  position: absolute;
+  left: 1.3rem;
+  right: 0.4rem;
+  min-height: 31rem;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    max-width: 28rem;
+    left: 2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero {
+    max-width: 32rem;
+    left: 4.2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    max-width: 36.75rem;
+    left: 9rem;
+    min-height: min(80vh, 45rem);
+  }
+}
+
+.content-heading > h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.99rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .content-heading > h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  .content-heading > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.content-para {
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 960px) {
+  .content-para {
+    margin-bottom: 2.3rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .content-para {
+    font-size: 1.25rem;
+    color: white;
+  }
+}
+
+.label-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.99rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.email-input input {
+  padding: 0.8rem 1.5rem;
+  background: rgba(22, 22, 22, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  width: 97%;
+}
+
+@media (min-width: 600px) {
+  .email-input input {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.email-input input:focus {
+  outline: white solid 0.125rem;
+  outline-offset: 0.125rem;
+}
+
+.email-input span {
+  position: absolute;
+  font-size: 1rem;
+  top: 15px;
+  left: 23px;
+  z-index: 1;
+  color: #e1dede;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email-input input:focus ~ span {
+  top: 5px;
+  font-size: 0.8rem;
+}
+
+.input-box {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .input-box {
+    display: flex;
+  }
+}
+
+.email-input button {
+  vertical-align: text-top;
+  width: auto;
+  font-size: 1.125rem;
+  font-weight: 500;
+  max-height: 48px;
+  padding: 0.75rem 1.5rem;
+  background: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .email-input button {
+    margin-top: 0;
+    min-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .email-input button {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.email-input input:focus ~ label {
+  font-size: 0.5rem;
+  top: 5px;
+}
+
+.button-cluster svg {
+  width: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .button-cluster svg {
+    width: 1.5rem;
+  }
+}
+
+.button-cluster button {
+  display: flex;
+  align-items: center;
+}
+
+/* curve container */
+
+.curve > img {
+  margin-top: -0.2rem;
+  margin-bottom: -0.6rem;
+  object-fit: fill;
+  height: 6.25rem;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 960px) {
+  .curve > img {
+    margin-top: -0.2rem;
+    margin-bottom: -0.6rem;
+    object-fit: cover;
+    height: 6.25rem;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+/* tile grid */
+
+.tile-cluster1,
+.tile-cluster2,
+.faq,
+.floating-button {
+  background-color: black;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+@media (min-width: 600px) {
+  .tile-cluster1,
+  .tile-cluster2,
+  .faq {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .tile-cluster1,
+  .tile-cluster2,
+  .faq {
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .tile-cluster1,
+  .tile-cluster2,
+  .faq {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+div.tile-wrapper1,
+div.tile-wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 960px) {
+  div.tile-wrapper1,
+  div.tile-wrapper2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  div.tile-wrapper1,
+  div.tile-wrapper2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+div.tile-cluster1 div.card-tile {
+  background: linear-gradient(180deg, #6c1f41 0%, #210d0e 100%);
+}
+
+div.tile-cluster1 div.card-main-content h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  div.tile-cluster1 div.card-main-content h4 {
+    font-size: 1.25rem;
+  }
+}
+
+.tile-cluster1 h4,
+.tile-cluster2 h4,
+.faq h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .tile-cluster1 h4,
+  .tile-cluster2 h4,
+  .faq h4 {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+
+.card-para {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.688);
+}
+
+@media (max-width: 1280px) {
+  .card-para {
+    font-size: 1rem;
+  }
+}
+
+.card-price {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1280px) {
+  .card-price {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  div.tile-cluster1 div.card-body {
+    padding-left: 9px;
+    padding-right: 30px;
+  }
+}
+
+div.tile-cluster2 div.card-main-content {
+  padding: 0.5rem 0.2rem 0rem 0.2rem;
+}
+
+div.tile-cluster2 div.card-main-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  div.tile-cluster2 div.card-main-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+div.tile-cluster2 h6 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.009rem;
+  font-weight: 400;
+}
+
+div.tile-cluster2 div.card-tile {
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+}
+
+.accordion-item {
+  --bs-accordion-bg: rgb(45, 45, 45);
+  --bs-accordion-btn-bg: rgb(45, 45, 45);
+  --bs-accordion-color: white;
+  --bs-accordion-active-color: white;
+  --bs-accordion-active-bg: rgb(45, 45, 45);
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --accordion-btn-color: white;
+  --bs-accordion-btn-padding-y: 1.46rem;
+  --bs-accordion-btn-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg>');
+  --bs-accordion-btn-icon-width: 38px;
+
+  --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12 6 6m6 6 6 6m-6-6 6-6m-6 6-6 6" fill="white"></path></svg>');
+}
+
+@media (max-width: 960px) {
+  .accordion-item {
+    --bs-accordion-btn-icon-width: 24px;
+  }
+}
+
+.accordion-header {
+  border-bottom: 1.8px solid black;
+}
+
+.accordion-button.collapsed {
+  color: white;
+}
+
+.accordion-button:hover,
+.accordion-button:not(.collapsed):hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.accordion-button::after {
+  transform: none !important;
+}
+
+.accordion,
+.login {
+  max-width: 80%;
+}
+
+@media (max-width: 960px) {
+  .accordion,
+  .login {
+    max-width: 100%;
+  }
+}
+
+.faq h2,
+.faq .accordion-body {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+}
+
+@media (max-width: 960px) {
+  .faq h2,
+  .faq .accordion-body {
+    font-size: 1.125rem;
+  }
+}
+
+.faq .accordion button {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 960px) {
+  .faq .accordion button {
+    font-size: 1.125rem;
+  }
+}
+
+.login .input-box {
+  min-width: 103.5%;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .login .input-box {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .login .input-box {
+    min-width: 104%;
+  }
+}
+
+.login .button-cluster {
+  height: 62.5px;
+}
+
+@media (max-width: 600px) {
+  .login .button-cluster {
+    margin-left: 0;
+    height: 62.5px;
+  }
+}
+
+.login-email {
+  margin-right: -10px;
+}
+
+@media (max-width: 600px) {
+  .login-email {
+    margin-right: 0px;
+  }
+}
+.footer-items {
+  background-color: black;
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
+}
+
+@media (min-width: 600px) {
+  .footer-items {
+    background-color: black;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (min-width: 960px) {
+  .footer-items {
+    background-color: black;
+    padding-left: 6.2rem;
+    padding-right: 6.2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-items {
+    background-color: black;
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+}
+
+.list-cluster {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-items {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .list-items {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 960px) {
+  .list-items {
+    flex: 0 0 33.33%;
+  }
+}
+@media (min-width: 1280px) {
+  .list-items {
+    flex: 0 0 25%;
+  }
+}
+
+.footer-items a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-items .call-query > p,
+span {
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+
+.call-query1 > p {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .floating-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: text-top;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    width: 100%;
+  }
+}
+
+.watch {
+  background-color: rgb(229, 9, 20);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 300ms ease-in 0s, transform 300ms ease-in 0s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.floating-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 601px) {
+  .floating-button {
+    display: none;
+  }
+}
+
+.watch:hover,
+button:hover,
+.sign-in a:hover {
+  background-color: rgb(193, 17, 25);
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
