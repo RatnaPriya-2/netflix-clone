@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.png";
@@ -87,7 +87,6 @@ const Container = styled.div`
   }
 
   nav {
-   
     position: sticky;
     top: 0;
     height: 6.5rem;
@@ -107,6 +106,7 @@ const Container = styled.div`
   .logo {
     img {
       height: 5rem;
+      margin-left:-1rem;
     }
   }
 

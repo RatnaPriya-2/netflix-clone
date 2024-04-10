@@ -17,7 +17,7 @@ export default function Login() {
     password: "",
   });
 
-  const handleLogIn = async () => {
+  const handleLogin = async () => {
     try {
       const { email, password } = formValues;
       await signInWithEmailAndPassword(firebaseAuth, email, password);
@@ -31,6 +31,7 @@ export default function Login() {
       navigate("/");
     }
   });
+  
   return (
     <Container>
       <BackgroundImage />
@@ -64,7 +65,7 @@ export default function Login() {
                 })
               }
             />
-            <button onClick={handleLogIn}>Log In</button>
+            <button onClick={handleLogin}>Log In</button>
           </div>
         </div>
       </div>
